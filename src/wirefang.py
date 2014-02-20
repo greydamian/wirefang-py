@@ -2,9 +2,9 @@
 
 from __future__ import print_function
 
-import sys    # argv
-import os     # geteuid
-import socket # socket
+import sys
+import os
+import socket
 
 __version__ = 'v1.0.0'
 __authors__ = 'Damian Jason Lapidge <grey@greydamian.org'
