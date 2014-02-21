@@ -14,8 +14,6 @@ Compatibility
 -------------
 
     * Linux
-    * Unix
-    * OS X
 
 License
 -------
