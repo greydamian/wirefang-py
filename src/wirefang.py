@@ -46,14 +46,21 @@ def main(args):
     try:
         f = open(fpath, 'rb')
     except:
-        print('error: failure to open file (' + str(fpath) + ')', 
-              file=sys.stderr)
+        print('error: failure to open file (' + fpath + ')', file=sys.stderr)
         return 1 # exit failure
 
-    buf = f.read()
+    try:
+        buf = f.read()
+    except:
+        print('error: failure reading from file', file=sys.stderr)
+        return 1 # exit failure
     f.close()
 
-    sock.sendall(buf)
+    try:
+        sock.sendall(buf)
+    except:
+        print('error: failure writing packet to network', file=sys.stderr)
+        return 1 # exit failure
     sock.close()
 
     return 0 # exit success
