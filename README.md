@@ -7,13 +7,13 @@ Overview
 Wirefang-py is basically a Python translation of the wirefang program. Like 
 wirefang, it is a simple packet injection utility.
 
-Wirefang-py reads bytes from a file and then writes those bytes to layer 2 
-(data link) of a network interface.
+Wirefang-py reads bytes from a file and then writes those bytes to the data 
+link layer (layer 2) of a network interface.
 
 Compatibility
 -------------
 
-    * Linux
+* Linux
 
 License
 -------
