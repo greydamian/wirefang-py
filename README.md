@@ -14,6 +14,7 @@ Compatibility
 -------------
 
 * Linux
+    * Python >= 2.7.0
 
 License
 -------
