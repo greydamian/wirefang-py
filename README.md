@@ -13,7 +13,7 @@ link layer (layer 2) of a network interface.
 Compatibility
 -------------
 
-* Linux
+* Linux (with dependencies from sublist)
     * Python >= 2.7.0
 
 License
