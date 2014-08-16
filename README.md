@@ -14,7 +14,7 @@ Compatibility
 -------------
 
 * Linux (with dependencies from sublist)
-    * Python >= 2.7.0
+  * Python >= 2.7.0
 
 License
 -------
@@ -22,4 +22,3 @@ License
 Copyright (c) 2014 Damian Jason Lapidge
 
 Licensing terms and conditions can be found within the file LICENSE.txt.
-
