@@ -70,6 +70,9 @@ if __name__ == '__main__':
         sys.exit(main(sys.argv))
     except KeyboardInterrupt:
         sys.exit(1) # exit failure
+    except SystemExit:
+        # ignore SystemExit raised by sys.exit
+        pass
     except:
         print('error: unhandled exception', file=sys.stderr)
         sys.exit(1) # exit failure
