@@ -7,8 +7,8 @@ import os
 import socket
 
 __version__ = 'v1.0.0'
-__authors__ = 'Damian Jason Lapidge <grey@greydamian.org'
-__license__ = '''Copyright (c) 2014 Damian Jason Lapidge
+__authors__ = 'Damian Jason Lapidge <grey@greydamian.org>'
+__license__ = '''Copyright (c) 2015 Damian Jason Lapidge
 
 The contents of this file are subject to the terms and conditions defined 
 within the file LICENSE.txt, located within this project's root directory.
@@ -24,7 +24,7 @@ def create_rawsock(iface):
     sock.bind((iface, socket.SOCK_RAW))
     return sock
 
-def main(args):
+def main(args=None):
     if os.geteuid() > 0:
         print('error: this program requires superuser privilages', 
               file=sys.stderr)
