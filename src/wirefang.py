@@ -15,9 +15,22 @@ within the file LICENSE.txt, located within this project's root directory.
 '''
 
 def print_usage():
+    """Prints command usage information to stderr."""
     print('usage: wirefang-py <file> <interface>', file=sys.stderr)
 
 def create_rawsock(iface):
+    """Creates a new raw socket object.
+
+    The socket sends/receives data at the link layer (TCP/IP model)/data-link 
+    layer (OSI model).
+    
+    Args:
+        iface: A string specifying the name of the network interface to which 
+               the raw socket should be bound. For example "eth0".
+
+    Returns:
+        A socket object.
+    """
     sock = socket.socket(socket.AF_PACKET, 
                          socket.SOCK_RAW, 
                          socket.htons(socket.SOCK_RAW))
@@ -25,6 +38,7 @@ def create_rawsock(iface):
     return sock
 
 def main(args=None):
+    """Program entry point."""
     if os.geteuid() > 0:
         print('error: this program requires superuser privilages', 
               file=sys.stderr)
