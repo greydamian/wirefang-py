@@ -1,0 +1,14 @@
+wirefang-py v1.0.0
+------------------
+* Initial release
+
+TODO
+----
+* Read from stdin by default, instead of from a file [v2.0.0]
+* Add read from file option (-r <file>) [v2.0.0]
+* Add print help option (-h) [v2.0.0]
+* Add support for long options [v3.0.0]
+* Package script as an executable zip file [v4.0.0]
+    * Implement __main__.py
+* Add distutils setup script
+
